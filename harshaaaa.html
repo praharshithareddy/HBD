@@ -1,0 +1,303 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+```css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#eef8ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family:'Patrick Hand',cursive;
+}
+
+.card{
+    width:1100px;
+    height:680px;
+    background:white;
+    border-radius:25px;
+    border:2px solid #f6d6df;
+    position:relative;
+    overflow:hidden;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+    linear-gradient(rgba(173,216,230,.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(173,216,230,.18) 1px, transparent 1px);
+    background-size:80px 80px;
+}
+
+/* CAMERA */
+
+.camera{
+    position:absolute;
+    top:20px;
+    left:30px;
+    width:120px;
+    z-index:5;
+}
+
+/* JAR */
+
+.jar{
+    position:absolute;
+    top:0;
+    left:520px;
+    width:130px;
+    z-index:5;
+}
+
+/* HEART PHOTO */
+
+.heart-frame{
+    position:absolute;
+    left:140px;
+    top:170px;
+    width:300px;
+    height:300px;
+    z-index:3;
+}
+
+.heart-frame img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+/* BUNNY */
+
+.rabbit{
+    position:absolute;
+    left:5px;
+    bottom:0;
+    width:170px;
+    z-index:5;
+}
+
+/* HEARTS */
+
+.heart1{
+    position:absolute;
+    left:20px;
+    bottom:260px;
+    color:#ff9eb8;
+    font-size:40px;
+}
+
+.heart2{
+    position:absolute;
+    left:40px;
+    bottom:180px;
+    color:#ff9eb8;
+    font-size:40px;
+}
+
+.heart3{
+    position:absolute;
+    right:50px;
+    top:180px;
+    color:#ff9eb8;
+    font-size:40px;
+}
+
+.heart4{
+    position:absolute;
+    right:80px;
+    top:240px;
+    color:#ff9eb8;
+    font-size:35px;
+}
+
+.heart5{
+    position:absolute;
+    left:40px;
+    top:470px;
+    color:#ff9eb8;
+    font-size:35px;
+}
+
+.heart6{
+    position:absolute;
+    left:60px;
+    top:550px;
+    color:#ff9eb8;
+    font-size:35px;
+}
+
+.heart7{
+    position:absolute;
+    left:90px;
+    top:120px;
+    color:#ff9eb8;
+    font-size:30px;
+}
+
+/* CUTIE */
+
+.cutie{
+    position:absolute;
+    left:170px;
+    bottom:80px;
+    font-size:55px;
+    color:#b4a6ff;
+    z-index:10;
+}
+
+/* TEXT */
+
+.content{
+    position:absolute;
+    left:500px;
+    top:120px;
+    width:500px;
+}
+
+.content h1{
+    font-family:'Amatic SC',cursive;
+    font-size:80px;
+    color:#222;
+    margin-bottom:20px;
+}
+
+.content p{
+    font-size:21px;
+    line-height:1.5;
+    color:#333;
+}
+
+/* CLICK BUTTON */
+
+.click-btn{
+    position:absolute;
+    right:30px;
+    top:330px;
+
+    width:90px;
+    height:90px;
+
+    border:none;
+    border-radius:50%;
+    background:#ffd6e6;
+
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* POPUP */
+
+.popup{
+    display:none;
+    position:absolute;
+    inset:0;
+    background:white;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index:20;
+}
+
+.popup h2{
+    font-size:55px;
+    color:#ff70a6;
+}
+
+.popup p{
+    font-size:30px;
+    margin-top:10px;
+}
+
+.close{
+    margin-top:20px;
+    padding:10px 25px;
+    border:none;
+    border-radius:20px;
+    background:#ffc8dc;
+    cursor:pointer;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- Camera -->
+    <img src="camera.png" class="camera">
+
+    <!-- Jar -->
+    <img src="jaar.png" class="jar">
+
+    <!-- Heart Photo -->
+    <div class="heart-frame">
+        <img src="heartphoto.png.jpeg" alt="My Love">
+    </div>
+
+    <!-- Bunny -->
+    <img src="bunny.png" class="rabbit">
+
+    <!-- Hearts -->
+    <div class="heart1">♡</div>
+    <div class="heart2">♡</div>
+    <div class="heart3">♡</div>
+    <div class="heart4">♡</div>
+    <div class="heart5">♡</div>
+    <div class="heart6">♡</div>
+    <div class="heart7">♡</div>
+
+    <!-- Name -->
+    <div class="cutie">
+        Cutie ❤️
+    </div>
+
+    <!-- Message -->
+    <div class="content">
+
+        <h1>HAPPY BIRTHDAY</h1>
+
+        <p> 
+        Happy Birthday, My Love ❤️ On your special day, I just want you to know how much you mean to me. 
+        You bring so much happiness, love, and warmth into my life,and I am truly grateful for every moment we share together.
+
+        May this year bring you endless joy, success, good health, and all the happiness your heart desires.
+        Keep believing in yourself, chasing your dreams, and shining the way you always do.
+        Thank you for being my biggest comfort, my favorite person, and the reason behind so many of my smiles.
+        No matter where life takes us, I will always support you, believe in you, and cherish every memory we create together💖✨.
+        </p>
+
+    </div>
+
+    <!-- Button -->
+    <button class="click-btn"
+    onclick="window.location.href='clickme.html'">
+    CLICK<br>ME
+    </button>
+
+    </div>
+
+
+</body>
+</html>
+```

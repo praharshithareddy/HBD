@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handsome ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#eef8ff;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:'Patrick Hand',cursive;
+}
+
+.card{
+width:1200px;
+height:720px;
+background:white;
+border-radius:25px;
+border:2px solid #f6d6df;
+position:relative;
+overflow:hidden;
+}
+
+.card::before{
+content:"";
+position:absolute;
+inset:0;
+background-image:
+linear-gradient(rgba(173,216,230,.18) 1px, transparent 1px),
+linear-gradient(90deg, rgba(173,216,230,.18) 1px, transparent 1px);
+background-size:80px 80px;
+}
+
+.camera{
+position:absolute;
+top:20px;
+left:20px;
+width:130px;
+}
+
+.title{
+position:absolute;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+font-size:65px;
+font-family:'Pacifico',cursive;
+color:#555;
+}
+
+.hearts{
+position:absolute;
+top:110px;
+left:50%;
+transform:translateX(-50%);
+font-size:55px;
+color:pink;
+}
+
+/* PHOTOS */
+
+.photo{
+position:absolute;
+width:200px;
+height:200px;
+}
+
+.photo img{
+width:100%;
+height:100%;
+object-fit:contain;
+}
+
+.p1{
+top:120px;
+left:220px;
+}
+
+.p2{
+top:120px;
+right:220px;
+}
+
+.p3{
+top:280px;
+left:500px;
+}
+
+.p4{
+bottom:50px;
+left:260px;
+}
+
+.p5{
+bottom:50px;
+right:260px;
+}
+
+/* TEXT */
+
+.love{
+position:absolute;
+top:330px;
+left:280px;
+width:180px;
+text-align:center;
+font-size:30px;
+}
+
+.baby{
+position:absolute;
+top:330px;
+right:280px;
+width:180px;
+text-align:center;
+font-size:30px;
+}
+
+.boyfriend{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:42px;
+    color:#666;
+}
+
+/* ARROWS */
+
+.arrow1{
+    position:absolute;
+    top:270px;
+    left:90px;
+    font-size:70px;
+    color:#f7b7c8;
+}
+
+.arrow2{
+    position:absolute;
+    top:270px;
+    right:90px;
+    font-size:70px;
+    color:#f7b7c8;
+}
+
+/* FLOWERS */
+
+.flowers{
+    position:absolute;
+    right:15px;
+    bottom:15px;
+    width:100px;
+    z-index:3;
+}
+/* BUTTON */
+
+.click-btn{
+position:absolute;
+right:20px;
+top:300px;
+
+width:90px;
+height:90px;
+
+border:none;
+border-radius:50%;
+background:#ffd6e6;
+
+font-weight:bold;
+cursor:pointer;
+}
+
+.bunny2{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:100px;
+    z-index:2;
+}
+
+.bunny3{
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    width:100px;
+    z-index:2;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="camera.png" class="camera">
+
+<h1 class="title">Handsome</h1>
+
+<div class="hearts">♡♡</div>
+
+<div class="photo p1">
+<img src="h1.png.png">
+</div>
+
+<div class="photo p2">
+<img src="h2.png.png">
+</div>
+
+<div class="photo p3">
+<img src="h3.png.png">
+</div>
+
+<div class="photo p4">
+<img src="h4.png.png">
+</div>
+
+<div class="photo p5">
+<img src="h5.png.png">
+</div>
+
+<div class="love">
+My Love ❤️
+</div>
+
+<div class="baby">
+My everything ❤️
+</div>
+
+<div class="boyfriend">
+Boyfriend ❤️
+</div>
+
+<div class="arrow1">➜</div>
+
+<div class="arrow2">➜</div>
+
+
+<img src="bunny2.png" class="bunny2">
+
+<img src="bunny3.png" class="bunny3">
+
+<img src="flower.png" class="flowers">
+
+<button class="click-btn"
+onclick="window.location.href='final.html'">
+CLICK<br>ME
+</button>
+</div>
+</body>
+</html>
